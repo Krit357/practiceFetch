@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fetch Pokemon Gen1 API</title>
+  </head>
+  <body>
+    <h1 id="header" class="header">Fetch pokemon</h1>
+    <div class="search-bar">
+      <div class="search-option">
+        <select id="poketype1" class="poketype">
+          <option value="all">All type</option>
+          <option value="bug">Bug</option>
+          <option value="dark">Dark</option>
+          <option value="dragon">Dragon</option>
+          <option value="electric">Electric</option>
+          <option value="fairy">Fairy</option>
+          <option value="fighting">Fighting</option>
+          <option value="fire">Fire</option>
+          <option value="flying">Flying</option>
+          <option value="ghost">Ghost</option>
+          <option value="grass">Grass</option>
+          <option value="ground">Ground</option>
+          <option value="ice">Ice</option>
+          <option value="normal">Normal</option>
+          <option value="poison">Poison</option>
+          <option value="psychic">Psychic</option>
+          <option value="rock">Rock</option>
+          <option value="steel">Steel</option>
+          <option value="water">Water</option>
+        </select>
+
+        <select id="poketype2" class="poketype">
+          <option value="all">No type</option>
+          <option value="bug">Bug</option>
+          <option value="dark">Dark</option>
+          <option value="dragon">Dragon</option>
+          <option value="electric">Electric</option>
+          <option value="fairy">Fairy</option>
+          <option value="fighting">Fighting</option>
+          <option value="fire">Fire</option>
+          <option value="flying">Flying</option>
+          <option value="ghost">Ghost</option>
+          <option value="grass">Grass</option>
+          <option value="ground">Ground</option>
+          <option value="ice">Ice</option>
+          <option value="normal">Normal</option>
+          <option value="poison">Poison</option>
+          <option value="psychic">Psychic</option>
+          <option value="rock">Rock</option>
+          <option value="steel">Steel</option>
+          <option value="water">Water</option>
+        </select>
+      </div>
+      <div class="form-search">
+        <form id="poke-form">
+          <input
+            class="poke-input"
+            id="form-input"
+            type="text"
+            name="pokeName"
+            placeholder="Search pokemon..."
+          />
+          <button class="btn-form">Search</button>
+        </form>
+        <button id="btn-reset" class="btn-form">Reset</button>
+      </div>
+
+      <div id="total-pokemon" class="total-pokemon"></div>
+    </div>
+    <ul id="poke-name">
+      <!-- <li>   </li> -->
+    </ul>
+    <script src="./script.js"></script>
+  </body>
+</html>

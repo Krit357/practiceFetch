@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap");
+
+:root {
+  --black-text: rgb(48, 47, 47);
+  --yellow: rgb(179, 209, 59);
+  --orange-red: rgb(255, 69, 0);
+  --red: rgb(255, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Prompt;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black-text);
+}
+
+.header:hover {
+  cursor: pointer;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-search {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border: none;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar > .search-option {
+  margin-right: 10px;
+}
+
+.poketype {
+  border-radius: 10px;
+  border: none;
+  height: 30px;
+}
+
+.btn-form {
+  border-radius: 10px;
+  border: none;
+  height: 30px;
+  width: 60px;
+  margin-left: 10px;
+}
+
+body {
+  background-color: var(--red);
+}
+
+#poke-name {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-gap: 10px;
+  margin: 0 2%;
+}
+
+.poke-input {
+  border-radius: 10px;
+  padding-left: 7px;
+  height: 30px;
+}
+
+.poke-input:focus {
+  border: none;
+}
+
+.poke-li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--black-text);
+  background-color: var(--orange-red);
+  border: 5px var(--yellow) solid;
+}
+
+.poke-image {
+  width: 200px;
+}
+
+.poke-types {
+  margin-bottom: 20px;
+
+  font-weight: 300;
+}
+
+.total-pokemon {
+  margin-left: 50px;
+  color: var(--black-text);
+  font-size: 18px;
+  font-weight: 700;
+}
